@@ -1,0 +1,17 @@
+syntax:glob
+*~
+*.db
+*.directory
+*.installed.cfg
+*.pyc
+*.sublime-project
+*.sublime-workspace
+/.coverage
+bin/
+data/
+develop-eggs/
+eggs/
+ConMe.egg-info/
+parts/
+build/
+dist/
