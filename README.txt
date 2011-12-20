@@ -1,5 +1,13 @@
 ConMe README
-==================
+============
+
+Current Tasks
+-------------
+
+* Move to Mako templates
+* Account login system
+* User profile system
+
 
 Getting Started
 ---------------
