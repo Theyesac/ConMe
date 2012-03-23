@@ -11,7 +11,7 @@ from pyramid.paster import (
 
 from ..models import (
     DBSession,
-    MyModel,
+    User,
     Base,
     )
 
@@ -31,5 +31,7 @@ def main(argv=sys.argv):
     DBSession.configure(bind=engine)
     Base.metadata.create_all(engine)
     with transaction.manager:
-        model = MyModel(name='one', value=1)
-        DBSession.add(model)
+        user = User(name=u'Test User', password=u'letmein',
+                    email=u'testuser@example.com', is_active=True,
+                    is_admin=True, verify_code=None)
+        DBSession.add(user)
