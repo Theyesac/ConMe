@@ -6,5 +6,5 @@ def add_handlers(config):
 					   '.root:RootHandler', action='index')
 	config.add_handler('user_register', '/user/register',
 					   '.user:UserHandler', action='register')
-	config.add_handler('user_view', '/user/{id}',
+	config.add_handler('user_view', '/user/{name}',
 					   '.user:UserHandler', action='view')

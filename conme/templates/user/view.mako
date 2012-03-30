@@ -3,4 +3,4 @@
     User view
 </%def>
 <h2>Welcome to ConMe</h2>
-<p>This is an example UserID: ${ id }</p>
+<p>${user.id} - ${user.name} - ${user.email}</p>

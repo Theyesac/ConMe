@@ -33,3 +33,7 @@ class User(Base):
         self.id = str(uuid.uuid1())
         self.name = name
         self.email = email
+
+    @classmethod
+    def by_name(cls, name):
+        return DBSession.query(cls).filter(cls.name == name).first()
