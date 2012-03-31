@@ -20,3 +20,9 @@ Getting Started
 - $venv/bin/populate_ConMe development.ini
 
 - $venv/bin/pserve development.ini
+
+
+Production Launch Checklist
+---------------------------
+
+- Update Session key & secret

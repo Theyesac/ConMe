@@ -7,4 +7,4 @@ class RootHandler(base.Handler):
     @action(renderer='index.mako')
     def index(self):
         """Index viev."""
-        return {}
+        return {'session': self.request.session}

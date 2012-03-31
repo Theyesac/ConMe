@@ -14,6 +14,9 @@ requires = [
     'pyramid_tm',
     'pyramid_debugtoolbar',
     'pyramid_handlers',
+    'pyramid_beaker',
+    'beaker',
+    'cryptacular',
     'WTForms',
     'zope.sqlalchemy',
     ]
