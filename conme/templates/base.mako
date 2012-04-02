@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Page Title</title>
+	<title>Convention Me!</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -35,9 +35,11 @@
 				<a class="brand" href="#">Convention Me!</a>
 				<div class="nav-collapse">
 					<ul class="nav">
-						<li class="active"><a href="#">Home</a></li>
+						<a href="/">Home</a>
 						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
+						<li><a href="/user/login">Login</a></li>
+						<li><a href="/user/logout">Logout</a></li>
+						<li><a href="/user/register">Register</a></li>
 					</ul>
 				</div> <!--/.nav-collapse -->
 			</div>
