@@ -35,12 +35,25 @@
 				<a class="brand" href="#">Convention Me!</a>
 				<div class="nav-collapse">
 					<ul class="nav">
-						<a href="/">Home</a>
+						<li><a href="/">Home</a></li>
 						<li><a href="#about">About</a></li>
-						<li><a href="/user/login">Login</a></li>
-						<li><a href="/user/logout">Logout</a></li>
-						<li><a href="/user/register">Register</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="/user/login">Login</a></li>
+								<li><a href="/user/logout">Logout</a></li>
+								<li class="divider"></li>
+								<li><a href="/user/register">Register</a></li>
+							</ul>
+						</li>
 					</ul>
+					<p class="navbar-text pull-right">
+						% if user:
+							You're logged in as ${user.name}.
+						% else:
+						    You're not logged in.
+						% endif
+					</p>
 				</div> <!--/.nav-collapse -->
 			</div>
 		</div>
@@ -53,18 +66,7 @@
 	<!-- Le javascript
 	================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="../static/js/jquery.js"></script>
-	<script src="../static/js/bootstrap-transition.js"></script>
-	<script src="../static/js/bootstrap-alert.js"></script>
-	<script src="../static/js/bootstrap-modal.js"></script>
+	<script src="../static/js/jquery-1.7.2.min.js"></script>
 	<script src="../static/js/bootstrap-dropdown.js"></script>
-	<script src="../static/js/bootstrap-scrollspy.js"></script>
-	<script src="../static/js/bootstrap-tab.js"></script>
-	<script src="../static/js/bootstrap-tooltip.js"></script>
-	<script src="../static/js/bootstrap-popover.js"></script>
-	<script src="../static/js/bootstrap-button.js"></script>
-	<script src="../static/js/bootstrap-collapse.js"></script>
-	<script src="../static/js/bootstrap-carousel.js"></script>
-	<script src="../static/js/bootstrap-typeahead.js"></script>
 </body>
 </html>
